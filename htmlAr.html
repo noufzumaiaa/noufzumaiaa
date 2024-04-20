@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nouf Alzumaia Portfolio Web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   <!--Main CSS-->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+</head>
+<body>
+    <script>
+        const contactBtn = document.getElementById('contactBtn');
+
+        contactBtn.addEventListener('click', function () {
+            const email = 'noufzumaia@gmail.com';
+            contactBtn.href = 'mailto:' + email;
+            contactBtn.innerHTML = email;
+        });
+    </script>
+    <!-- Header Desgin -->
+    <header class="header">
+        <a href="#" class="logo">ملف نوف </a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+
+        <nav class="navbar">
+            <a href="#home" class="active">الصفحة الرئيسية</a>
+            <a href="#about">نبذه عني</a>
+            <a href="#services">خدماتي</a>
+            <a href="#Portifolo">مشاريعي</a>
+            <!-- <a href="#contact">Contact</a> -->
+
+        </nav>
+    </header>
+
+
+    <!-- Home section Desgin -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>السلام عليكم , أنا </h3>
+            <h1>نوف الزميع</h1>
+            <h3>وأنا <span class="multiple-text"></span></h3>
+
+            <script src="Nouf_web/main.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const typed = new Typed('.multiple-text', {
+                        strings: ['مطور برمجيات', 'مطور مواقع', 'حوسبة سحابية'],
+                        typeSpeed: 70,
+                        backSpeed: 70,
+                        backDelay: 1000,
+                        loop: true,
+                    });
+                });
+            </script>
+            <p>
+                أرغب في أن أكون جزءًا من منظمة نابضة بالحياة ورائدة, لتطبيق ما تعلمته وتطوير مهاراتي و
+                زيادة معرفتي في تكنولوجيا المعلومات.
+            </p>
+
+            <div class="social-media">
+                <!-- <a herf="#"><i class="fa-brands fa-facebook"></i></a> -->
+                <a href="https://www.linkedin.com/in/noufzumaia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/00966569302515" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/noufabdulrahmanz/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="file:///C:/Users/nalzumaia.c/Desktop/%D8%A7%D8%AC%D8%A7%D8%B2%D8%A7%D8%AA%D9%8A/Nouf_web/files/Nouf_AlZumaia_IT_Specialist_2024.pdf" class="btn" target="_blank">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img/NAZ.png" alt="" style="border-radius: 50%;">
+        </div>
+    </section>
+
+
+
+    <!-- About section Desgin -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/2.png" style="border-radius: 75%;">
+
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading" style="text-align: right;">نبذة <span>عني</span></h2>
+            <h3>مطور برمجيات</h3>
+            <p class="about-content" style="text-align: justify;">
+                أنا مطور برامج ولدي خبرة في مجالات مختلفة. بفضل خلفيتي القوية في تطوير البرمجيات، أمتلك المهارات اللازمة لإنشاء حلول مبتكرة وفعالة. أنا فخورة بحصولي على شهادة في الحوسبة السحابية من AWS وحاصله على شهادة من الهيئة السعودية للمهندسين كأخصائي تقنية معلومات. بالإضافة إلى ذلك، أتميز في تطوير الويب والتطبيقات، ولدي خبرة في مختلف اللغات البرمجية و بيئات العمل لها, والأدوات المختلفة لتقديم تجارب حلول رقمية استثنائية. أنا اهتم بأدق التفاصيل، ولدي الشغف بحل المشكلات. وأسعى دائما على اطلاع بأحدث التقنيات لتقديم حلول متطورة مصممة خصيصًا لتلبية احتياجات المستخدمين. أنا متحمسه لجلب مهاراتي وخبرتي إلى مشاريعك والمساهمة في نجاحك. لنتعاون لتحويل أفكارك إلى واقع!            <!-- <a href="#contact" class="btn">Contect me</a> -->
+
+            </p>
+            <a href="#" class="btn" id="contactBtn">تواصل معي</a>
+
+        </div>
+
+    </section>
+
+    <!-- Services section Desgin -->
+    <section class="services" id="services">
+        <h2 class="heading">خدماتي <span></span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>مطور مواقع</h3>
+                <p style="text-align: justify;">Highly qualified web application developer. With a deep understanding of web technologies and frameworks, I have the expertise to create stunning, responsive, and user-friendly web applications. Whether it's building interactive front-end interfaces using HTML, CSS, and JavaScript or developing robust back-end functionality with languages like Python, PHP, or Node.js, and C#.</p>
+                <a href="#" class="btn">الشهادة</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>مطور تطبيقات جوال</h3>
+                <p style="text-align: justify;">I am an experienced application developer skilled in both Android Studio with Java and Flutter. This proficiency allows me to create dynamic and innovative mobile applications tailored to your specific requirements. Whether you need a native Android app developed using Java or a cross-platform solution using Flutter, I have the expertise to bring your ideas to life.</p>
+                <a href="#" class="btn">الشهادة</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>حوسبة سحابية</h3>
+                <p style="text-align: justify;">
+                    Validates my foundational knowledge and understanding of cloud concepts, AWS services, security, and architectural best practices. With this achievement, I have demonstrated my ability to navigate the AWS Cloud and comprehend its fundamental functionalities.
+                    By earning the AWS Cloud Practitioner certification.
+
+                </p>
+                <a href="https://www.credly.com/badges/e9a31116-3f06-4ce2-9af9-21579054513c/public_url" class="btn" target="_blank">الشهادة</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Portifolo section Desgin -->
+    <section class="Portifolo" id="Portifolo">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="Portifolo-container">
+            <div class="Portifolo-box">
+                <img src="img/NZAppSoon1.png" alt="">
+                <div class="Portifolo-layer">
+                    <h4>Web Development</h4>
+                    <p>web deployment Content Soon</p>
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+
+            </div>
+
+            <div class="Portifolo-box">
+                <img src="img/NZAppSoon2.png" alt="">
+                <div class="Portifolo-layer">
+                    <h4>Mobile Application Development</h4>
+                    <p>Mobile Application Content Soon</p>
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+
+            </div>
+            <div class="Portifolo-box">
+                <img src="img/NZAppSoon1.png" alt="">
+                <div class="Portifolo-layer">
+                    <h4>Web Development</h4>
+                    <p>web deployment Content Soon</p>
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section Desgin
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+              <form action="#">
+                  <div class="input-box">
+                      <input type="text" placeholder="Full Name">
+                      <input type="email" placeholder="Email Address">
+                  </div>
+              <div class="input-box">
+                  <input type="number" placeholder="Mobile Number">
+                  <input type="text" placeholder="Email subject">
+              </div>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+              <input type="submit" value="Send Massage" class="btn">
+              </form>
+    </section>
+        -->
+    <!--Footer Design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 By Nouf A ALZumaia </p>
+
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+    </footer>
+
+    <!-- Main js-->
+    <script src='main.js'></script>
+    <!-- Typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</body>
+</html>
